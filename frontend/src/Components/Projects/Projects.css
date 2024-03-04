@@ -1,0 +1,182 @@
+.heading {
+  color: white;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.aboutProject {
+  /* border: 2px solid red; */
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  text-align: left;
+}
+
+.aboutProject p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.aboutProjectVideo {
+  margin-right: 5vw;
+  width: 30vw;
+  height: 62vh;
+}
+
+.contactDiv {
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.workDiv {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+video {
+  object-fit: cover;
+}
+
+/* Changes for Our Other Projects */
+
+.portfolioCategory p:hover {
+  color: #f1c30f;
+}
+
+.portfolioCategory p:hover .diamond {
+  color: #fff;
+}
+
+.onHover {
+  width: 100%;
+  overflow: hidden;
+  transition: width 0.7s ease-out;
+}
+
+.portfolioCard:hover .onHover {
+  width: 100%;
+  transition-delay: 0.7s;
+  cursor: pointer;
+}
+
+.textContainer {
+  background-color: rgba(0, 0, 0, 0.803);
+  height: 100%;
+  width: 0;
+  transition: width 0.2s ease-out;
+}
+
+.portfolioCard:hover .textContainer {
+  height: 100%;
+  width: 92%;
+  transition-delay: 0.2s;
+}
+
+.textContainer h5 {
+  padding-top: 42%;
+  padding-bottom: 2vh;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transform: translateY(150%);
+}
+.portfolioCard:hover .textContainer h5 {
+  transform: translateY(0);
+  transition: 1s;
+}
+
+/* Swiper */
+
+.swiperDiv {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customVideo {
+  width: 540px;
+  height: 480px;
+}
+
+/* Custom styles for small screens */
+@media (max-width: 768px) {
+  .aboutProject {
+    border: 2px solid red;
+    padding: 0 5vw;
+    text-align: center;
+  }
+
+  .aboutProject p {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .aboutProjectVideo {
+    border: 2px solid green;
+    margin-right: 0vw;
+    width: 90%;
+    /* height: 480px; */
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contactDiv {
+    text-align: center;
+  }
+  .gap-40 {
+    gap: 2rem;
+  }
+  .contactDiv p {
+    font-size: 0.8rem;
+  }
+
+  .portfolioCard {
+    width: 33%;
+  }
+
+  .workDiv {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .swiperDiv {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .customVideo {
+    height: auto;
+  }
+}

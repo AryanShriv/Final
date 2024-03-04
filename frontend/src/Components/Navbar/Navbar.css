@@ -1,0 +1,26 @@
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #202020;
+    z-index: 100000;
+}
+
+nav li a:hover{
+    color: #f1c30f;
+}
+
+/* Navbar.css */
+
+/* Custom styles for small screens */
+@media (max-width: 768px) {
+    .text-white{
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .logo,
+    .contact
+    {
+        display: none;
+    }
+}

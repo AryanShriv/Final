@@ -1,0 +1,47 @@
+.client {
+  /* min-height: 100vh; */
+  background: url(../../Assets/BG/bg-1.jpg);
+}
+
+.client h2 {
+  color: #fff;
+  font-weight: 3600;
+}
+.client .clientText {
+  font-size: 1.2rem;
+  font-weight: 500 !important;
+  color: white;
+  margin-bottom: 15vh;
+}
+
+.brandCol:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.circleImg {
+  animation: moveUpDown 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Custom styles for small screens */
+@media (max-width: 768px) {
+  #client h2 {
+    font-size: 2rem;
+  }
+  .client .clientText {
+    font-size: 0.8rem;
+    font-weight: 400 !important;
+    margin-bottom: 15vh;
+    line-height: 1.5;
+  }
+}
