@@ -37,7 +37,7 @@ const Testimonials = () => {
   return (
     <section id="clients " className="bg-white p-0 cursor-light no-transition">
       <div className="section-padding parallax-setting parallaxie parallax2">
-        <Bounce>
+        {/* <Bounce> */}
           <div className="container-testimonials">
             <div className="row">
               <div className="col-md-12">
@@ -122,7 +122,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-        </Bounce>
+        {/* </Bounce> */}
       </div>
     </section>
   );

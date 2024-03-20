@@ -2,7 +2,6 @@ import React from "react";
 import { FaYoutube } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
-import { Flip } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
@@ -10,11 +9,8 @@ const Footer = () => {
   return (
     <div className="footer bg-gray-800 text-white py-8">
       <div className="container mx-auto px-4">
-        <p className="text-center text-white text-sm mb-4">
-          © 2024 1shdeep Creatives. Made with ❤️ by 
-          <Link to='https://in.linkedin.com/company/agilesupport' target="_blank" rel="noopener noreferrer">
-          <Flip className="AgileSupport">Agile Support</Flip>
-          </Link>
+        <p className="text-center text-white text-sm mb-2">
+          © 2024 1shdeep Creatives.
         </p>
         <div className="flex justify-center">
           <a
@@ -41,6 +37,16 @@ const Footer = () => {
             <AiFillInstagram size={20} className="text-white" />
           </a>
         </div>
+        <p className="text-center text-white text-sm mt-4">
+          Made with ❤️ by
+          <Link
+            to="https://in.linkedin.com/company/agilesupport"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="AgileSupport"> Agile Support</span>
+          </Link>
+        </p>
       </div>
     </div>
   );
